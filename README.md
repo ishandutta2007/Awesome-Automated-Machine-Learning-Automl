@@ -174,3 +174,12 @@ If you find this AutoML repository useful, please consider supporting the projec
 <p align="center">
   <b>Made with ❤️ for data scientists, ML engineers, and open-source AutoML advocates.</b>
 </p>
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Automated-Machine-Learning-Automl&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Automated-Machine-Learning-Automl_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Automated-Machine-Learning-Automl_growth.svg">
+  </picture>
+</a>

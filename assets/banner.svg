@@ -14,11 +14,6 @@
       <stop offset="100%" stop-color="#FF007A" />
     </linearGradient>
 
-    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#7000FF" stop-opacity="0.3"/>
-    </linearGradient>
-
     <radialGradient id="glowG1" cx="20%" cy="25%" r="60%">
       <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.25" />
       <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
@@ -31,17 +26,8 @@
 
     <!-- Grid Pattern -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" />
     </pattern>
-
-    <!-- Filter for Glow effects -->
-    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
 
     <style>
       .title-text {
@@ -61,45 +47,36 @@
         text-transform: uppercase;
       }
 
-      /* Dynamic Animations (Background/Subtle only to ensure foreground text remains 100% visible) */
+      /* GitHub Safe Animations */
       @keyframes pulseGlow {
-        0%, 100% { opacity: 0.35; transform: scale(1); }
-        50% { opacity: 0.65; transform: scale(1.08); }
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 0.7; }
       }
       @keyframes floatNode1 {
-        0%, 100% { transform: translateY(0px) translateX(0px); }
-        50% { transform: translateY(-12px) translateX(6px); }
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
       }
       @keyframes floatNode2 {
-        0%, 100% { transform: translateY(0px) translateX(0px); }
-        50% { transform: translateY(14px) translateX(-8px); }
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(12px); }
       }
       @keyframes flowData {
         0% { stroke-dashoffset: 240; }
         100% { stroke-dashoffset: 0; }
       }
-      @keyframes orbitalSpin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
 
       .pulse-ambient {
-        animation: pulseGlow 8s ease-in-out infinite;
-        transform-origin: center;
+        animation: pulseGlow 6s ease-in-out infinite;
       }
       .floating-node-1 {
-        animation: floatNode1 6s ease-in-out infinite;
+        animation: floatNode1 5s ease-in-out infinite;
       }
       .floating-node-2 {
-        animation: floatNode2 7s ease-in-out infinite;
+        animation: floatNode2 6s ease-in-out infinite;
       }
       .flow-circuit {
         stroke-dasharray: 12, 12;
         animation: flowData 15s linear infinite;
-      }
-      .orbit-ring {
-        animation: orbitalSpin 30s linear infinite;
-        transform-origin: 1050px 180px;
       }
     </style>
   </defs>
@@ -116,21 +93,21 @@
   <g opacity="0.45" class="floating-node-1">
     <!-- Connecting neural pipeline curves -->
     <path class="flow-circuit" d="M 120 40 C 250 80, 200 320, 420 300 S 700 80, 850 160 S 1020 320, 1140 180" fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" />
-    <path class="flow-circuit" d="M 60 280 C 180 200, 320 220, 520 120 S 840 240, 1100 80" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-opacity="0.6" style="animation-direction: reverse;" />
+    <path class="flow-circuit" d="M 60 280 C 180 200, 320 220, 520 120 S 840 240, 1100 80" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-opacity="0.6" />
   </g>
 
   <!-- Decorative Orbit Nodes on Right Side -->
-  <g class="orbit-ring" opacity="0.3">
+  <g opacity="0.35">
     <circle cx="1050" cy="180" r="100" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="6,8" />
-    <circle cx="1050" cy="80" r="6" fill="#00F0FF" filter="url(#neonGlow)" />
-    <circle cx="1150" cy="180" r="5" fill="#FF007A" filter="url(#neonGlow)" />
+    <circle cx="1050" cy="80" r="6" fill="#00F0FF" />
+    <circle cx="1150" cy="180" r="5" fill="#FF007A" />
     <circle cx="950" cy="180" r="4" fill="#7000FF" />
   </g>
 
   <!-- Dynamic Neural Core graphic -->
   <g class="floating-node-2" transform="translate(930, 80)">
-    <circle cx="120" cy="100" r="48" fill="#0d1b2a" stroke="url(#primaryGrad)" stroke-width="2" filter="url(#neonGlow)" />
-    <text x="120" y="108" text-anchor="middle" font-size="34">🤖</text>
+    <circle cx="120" cy="100" r="48" fill="#0d1b2a" stroke="url(#primaryGrad)" stroke-width="2" />
+    <text x="120" y="112" text-anchor="middle" font-size="34">🤖</text>
   </g>
 
   <!-- Foreground Content Block (Always clear and legible, never obstructed) -->
@@ -187,7 +164,7 @@
     <!-- Meta Highlights -->
     <g transform="translate(0, 296)">
       <text x="0" y="0" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">
-        🌟 25+ Open-Source Frameworks &nbsp;•&nbsp; 🏢 10 Enterprise SaaS Solutions &nbsp;•&nbsp; 🚀 100% Production Ready &nbsp;•&nbsp; 📅 Updated October 2026
+        🌟 25+ Open-Source Frameworks &#x2022; 🏢 10 Enterprise SaaS Solutions &#x2022; 🚀 100% Production Ready &#x2022; 📅 Updated October 2026
       </text>
     </g>
 

@@ -28,9 +28,9 @@
 Welcome to the ultimate curated directory of **automated machine learning platforms**, **open-source AutoML frameworks**, and **hyperparameter optimization tools**. Whether you are looking for enterprise-grade commercial solutions (such as *DataRobot*, *Google Cloud AutoML*, and *H2O Driverless AI*), or self-hostable open-source alternatives (like *AutoGluon*, *TPOT*, and *MLJAR*), this list covers category leaders, automated feature engineering, and privacy-respecting machine learning automation.
 
 **Key Market Context:**
-- **Optuna** and **NNI** lead open-source hyperparameter optimization and automated ML lifecycle frameworks with **14,000+ GitHub stars**.
+- **Optuna** and **NNI** lead open-source hyperparameter optimization and automated ML lifecycle frameworks with **14,000+ GitHub_Stars**.
 - **AutoGluon** from AWS Labs provides state-of-the-art **multi-layer stacking, ensembling, and automated model selection** with a simple three-line API (**10,700+ stars**).
-- **TPOT** is a widely adopted evolutionary AutoML tool with **10,000+ GitHub stars**, using **genetic programming** to optimize scikit-learn pipelines.
+- **TPOT** is a widely adopted evolutionary AutoML tool with **10,000+ GitHub_Stars**, using **genetic programming** to optimize scikit-learn pipelines.
 - **MLJAR AutoML** (mljar-supervised) is a **practical open-source framework for tabular data** with **MIT licensing, explainability reports**, and a graphical interface.
 - **DataRobot** annual contracts range from **$100,000–$250,000 for small deployments** (10–25 users) to **$600,000+ for enterprise** (75+ users).
 - **H2O Driverless AI** is **available as a BYOL AMI on AWS Marketplace**, with infrastructure costs starting around **$3.06/hr on p3.2xlarge** (~$2,203/month).
@@ -69,85 +69,85 @@ Welcome to the ultimate curated directory of **automated machine learning platfo
 
 ## 🔓 Open-Source GitHub Projects
 
-*Curated frameworks for automated machine learning, neural architecture search, automated feature engineering, and hyperparameter optimization. Sorted by GitHub Stars Count (Descending)* 🌟
+*Curated frameworks for automated machine learning, neural architecture search, automated feature engineering, and hyperparameter optimization. Sorted by GitHub_Stars_Count (Descending)* 🌟
 
 - **[Optuna](https://github.com/optuna/optuna)** [![Stars](https://img.shields.io/github/stars/optuna/optuna?style=social&color=white)](https://github.com/optuna/optuna/stargazers)  
-  **An open-source hyperparameter optimization framework to automate searching over optimal machine learning parameters**, MIT licensed. **14,907+ GitHub stars** — **Next-generation hyperparameter optimization (HPO)** with define-by-run API, pruning algorithms (ASHA, Median), and seamless integrations with PyTorch, TensorFlow, LightGBM, and XGBoost. 🎯
+  **An open-source hyperparameter optimization framework to automate searching over optimal machine learning parameters**, MIT licensed. **14,907+ GitHub_Stars** — **Next-generation hyperparameter optimization (HPO)** with define-by-run API, pruning algorithms (ASHA, Median), and seamless integrations with PyTorch, TensorFlow, LightGBM, and XGBoost. 🎯
 
 - **[NNI (Neural Network Intelligence)](https://github.com/microsoft/nni)** [![Stars](https://img.shields.io/github/stars/microsoft/nni?style=social&color=white)](https://github.com/microsoft/nni/stargazers)  
-  **An open source AutoML toolkit for automate machine learning lifecycle**, MIT licensed. **14,367+ GitHub stars** — **Microsoft's comprehensive AutoML & NAS toolkit** covering feature engineering, neural architecture search (NAS), model compression (pruning/quantization), and hyperparameter tuning across distributed environments. 🧠
+  **An open source AutoML toolkit for automate machine learning lifecycle**, MIT licensed. **14,367+ GitHub_Stars** — **Microsoft's comprehensive AutoML & NAS toolkit** covering feature engineering, neural architecture search (NAS), model compression (pruning/quantization), and hyperparameter tuning across distributed environments. 🧠
 
 - **[Ludwig](https://github.com/ludwig-ai/ludwig)** [![Stars](https://img.shields.io/github/stars/ludwig-ai/ludwig?style=social&color=white)](https://github.com/ludwig-ai/ludwig/stargazers)  
-  **Declarative AutoML and deep learning framework for multimodal data and LLMs**, Apache-2.0 licensed. **11,772+ GitHub stars** — **Declarative AI configuration** supporting text, images, audio, tabular data, and LLM fine-tuning with zero code. 🚀
+  **Declarative AutoML and deep learning framework for multimodal data and LLMs**, Apache-2.0 licensed. **11,772+ GitHub_Stars** — **Declarative AI configuration** supporting text, images, audio, tabular data, and LLM fine-tuning with zero code. 🚀
 
 - **[Cleanlab](https://github.com/cleanlab/cleanlab)** [![Stars](https://img.shields.io/github/stars/cleanlab/cleanlab?style=social&color=white)](https://github.com/cleanlab/cleanlab/stargazers)  
-  **The standard open-source library for data-centric AI and finding label errors in machine learning datasets**, AGPL-3.0 licensed. **11,696+ GitHub stars** — **Automates data curation & quality checking** across tabular, NLP, and vision datasets to clean noisy training data before AutoML pipeline training. 🧼
+  **The standard open-source library for data-centric AI and finding label errors in machine learning datasets**, AGPL-3.0 licensed. **11,696+ GitHub_Stars** — **Automates data curation & quality checking** across tabular, NLP, and vision datasets to clean noisy training data before AutoML pipeline training. 🧼
 
 - **[AutoGluon](https://github.com/autogluon/autogluon)** [![Stars](https://img.shields.io/github/stars/autogluon/autogluon?style=social&color=white)](https://github.com/autogluon/autogluon/stargazers)  
-  **AutoML for Text, Image, and Tabular Data**, Apache-2.0 licensed. **10,766+ GitHub stars** — **AWS Labs' flagship AutoML framework** featuring **multi-layer stacking, ensembling, and automated model selection** with a robust three-line Python API. 🏆
+  **AutoML for Text, Image, and Tabular Data**, Apache-2.0 licensed. **10,766+ GitHub_Stars** — **AWS Labs' flagship AutoML framework** featuring **multi-layer stacking, ensembling, and automated model selection** with a robust three-line Python API. 🏆
 
 - **[TPOT](https://github.com/EpistasisLab/tpot)** [![Stars](https://img.shields.io/github/stars/EpistasisLab/tpot?style=social&color=white)](https://github.com/EpistasisLab/tpot/stargazers)  
-  **Automated Machine Learning with Genetic Programming**, LGPL-3.0 licensed. **10,054+ GitHub stars** — **Pioneering evolutionary AutoML framework** that uses **genetic algorithms** to automatically discover and assemble end-to-end scikit-learn pipelines. 🧬
+  **Automated Machine Learning with Genetic Programming**, LGPL-3.0 licensed. **10,054+ GitHub_Stars** — **Pioneering evolutionary AutoML framework** that uses **genetic algorithms** to automatically discover and assemble end-to-end scikit-learn pipelines. 🧬
 
 - **[PyCaret](https://github.com/pycaret/pycaret)** [![Stars](https://img.shields.io/github/stars/pycaret/pycaret?style=social&color=white)](https://github.com/pycaret/pycaret/stargazers)  
-  **An open-source, low-code machine learning library in Python**, MIT licensed. **9,851+ GitHub stars** — **The most accessible low-code AutoML library** — `compare_models()` and `blend_models()` orchestrate 30+ algorithms into an intuitive interactive workflow. ⚡
+  **An open-source, low-code machine learning library in Python**, MIT licensed. **9,851+ GitHub_Stars** — **The most accessible low-code AutoML library** — `compare_models()` and `blend_models()` orchestrate 30+ algorithms into an intuitive interactive workflow. ⚡
 
 - **[tsfresh](https://github.com/blue-yonder/tsfresh)** [![Stars](https://img.shields.io/github/stars/blue-yonder/tsfresh?style=social&color=white)](https://github.com/blue-yonder/tsfresh/stargazers)  
-  **Automatic extraction of relevant features from time series**, MIT licensed. **9,471+ GitHub stars** — **Automated feature engineering for time series**, extracting hundreds of statistical features paired with hypothesis testing for feature selection. 📈
+  **Automatic extraction of relevant features from time series**, MIT licensed. **9,471+ GitHub_Stars** — **Automated feature engineering for time series**, extracting hundreds of statistical features paired with hypothesis testing for feature selection. 📈
 
 - **[AutoKeras](https://github.com/keras-team/autokeras)** [![Stars](https://img.shields.io/github/stars/keras-team/autokeras?style=social&color=white)](https://github.com/keras-team/autokeras/stargazers)  
-  **AutoML library for deep learning based on Keras**, Apache-2.0 licensed. **9,333+ GitHub stars** — **Deep learning AutoML with Neural Architecture Search (NAS)** developed by DATA Lab at Texas A&M and Keras community. 🤖
+  **AutoML library for deep learning based on Keras**, Apache-2.0 licensed. **9,333+ GitHub_Stars** — **Deep learning AutoML with Neural Architecture Search (NAS)** developed by DATA Lab at Texas A&M and Keras community. 🤖
 
 - **[Auto-sklearn](https://github.com/automl/auto-sklearn)** [![Stars](https://img.shields.io/github/stars/automl/auto-sklearn?style=social&color=white)](https://github.com/automl/auto-sklearn/stargazers)  
-  **Automated Machine Learning toolkit and drop-in replacement for scikit-learn**, BSD-3-Clause licensed. **8,137+ GitHub stars** — **Bayesian optimization with meta-learning and automated ensemble construction** from the AutoML Freiburg team. 🏛️
+  **Automated Machine Learning toolkit and drop-in replacement for scikit-learn**, BSD-3-Clause licensed. **8,137+ GitHub_Stars** — **Bayesian optimization with meta-learning and automated ensemble construction** from the AutoML Freiburg team. 🏛️
 
 - **[FLAML](https://github.com/microsoft/FLAML)** [![Stars](https://img.shields.io/github/stars/microsoft/FLAML?style=social&color=white)](https://github.com/microsoft/FLAML/stargazers)  
-  **A fast and lightweight AutoML & tuning library**, MIT licensed. **4,406+ GitHub stars** — **Microsoft Research's cost-effective AutoML framework** optimized for low computational budgets, zero-shot hyperparameter tuning, and LLM orchestration. ⚡
+  **A fast and lightweight AutoML & tuning library**, MIT licensed. **4,406+ GitHub_Stars** — **Microsoft Research's cost-effective AutoML framework** optimized for low computational budgets, zero-shot hyperparameter tuning, and LLM orchestration. ⚡
 
 - **[MLJAR AutoML](https://github.com/mljar/mljar-supervised)** [![Stars](https://img.shields.io/github/stars/mljar/mljar-supervised?style=social&color=white)](https://github.com/mljar/mljar-supervised/stargazers)  
-  **Automated Machine Learning framework for tabular data**, MIT licensed. **3,299+ GitHub stars** — **Production-grade tabular AutoML framework** featuring explainability reports (SHAP), Golden Features engineering, and GUI integration with MLJAR Studio. 🎯
+  **Automated Machine Learning framework for tabular data**, MIT licensed. **3,299+ GitHub_Stars** — **Production-grade tabular AutoML framework** featuring explainability reports (SHAP), Golden Features engineering, and GUI integration with MLJAR Studio. 🎯
 
 - **[LightAutoML](https://github.com/sb-ai-lab/LightAutoML)** [![Stars](https://img.shields.io/github/stars/sb-ai-lab/LightAutoML?style=social&color=white)](https://github.com/sb-ai-lab/LightAutoML/stargazers)  
-  **Fast and customizable framework for automatic ML model creation**, Apache-2.0 licensed. **1,482+ GitHub stars** — **Sber AI Lab's framework** optimized for extreme speed and large-scale tabular/multimodal production workloads. ⚡
+  **Fast and customizable framework for automatic ML model creation**, Apache-2.0 licensed. **1,482+ GitHub_Stars** — **Sber AI Lab's framework** optimized for extreme speed and large-scale tabular/multimodal production workloads. ⚡
 
 - **[SMAC3](https://github.com/automl/SMAC3)** [![Stars](https://img.shields.io/github/stars/automl/SMAC3?style=social&color=white)](https://github.com/automl/SMAC3/stargazers)  
-  **Sequential Model-based Algorithm Configuration**, BSD-3-Clause licensed. **1,257+ GitHub stars** — **Versatile Bayesian Optimization package** powering modern algorithm configuration and hyperparameter optimization research. ⚙️
+  **Sequential Model-based Algorithm Configuration**, BSD-3-Clause licensed. **1,257+ GitHub_Stars** — **Versatile Bayesian Optimization package** powering modern algorithm configuration and hyperparameter optimization research. ⚙️
 
 - **[FEDOT](https://github.com/aimclub/FEDOT)** [![Stars](https://img.shields.io/github/stars/aimclub/FEDOT?style=social&color=white)](https://github.com/aimclub/FEDOT/stargazers)  
-  **Automated modeling and machine learning framework**, BSD-3-Clause licensed. **711+ GitHub stars** — **Evolutionary AutoML** that generates and optimizes arbitrary composite machine learning pipelines for complex multi-modal tasks. 🧬
+  **Automated modeling and machine learning framework**, BSD-3-Clause licensed. **711+ GitHub_Stars** — **Evolutionary AutoML** that generates and optimizes arbitrary composite machine learning pipelines for complex multi-modal tasks. 🧬
 
 - **[Hyperactive](https://github.com/SimonBlanke/Hyperactive)** [![Stars](https://img.shields.io/github/stars/SimonBlanke/Hyperactive?style=social&color=white)](https://github.com/SimonBlanke/Hyperactive/stargazers)  
-  **Optimization and data collection toolbox for convenient and fast prototyping**, MIT licensed. **550+ GitHub stars** — **Lightweight multi-algorithm hyperparameter optimization** supporting hill climbing, simulated annealing, and particle swarm optimization. 🔬
+  **Optimization and data collection toolbox for convenient and fast prototyping**, MIT licensed. **550+ GitHub_Stars** — **Lightweight multi-algorithm hyperparameter optimization** supporting hill climbing, simulated annealing, and particle swarm optimization. 🔬
 
 - **[Auto_ViML](https://github.com/AutoViML/Auto_ViML)** [![Stars](https://img.shields.io/github/stars/AutoViML/Auto_ViML?style=social&color=white)](https://github.com/AutoViML/Auto_ViML/stargazers)  
-  **Automatically Build Multiple ML Models with a Single Line of Code**, Apache-2.0 licensed. **548+ GitHub stars** — **Beginner-friendly tabular AutoML** featuring automated data cleaning, feature selection, and model training in one line. 🚀
+  **Automatically Build Multiple ML Models with a Single Line of Code**, Apache-2.0 licensed. **548+ GitHub_Stars** — **Beginner-friendly tabular AutoML** featuring automated data cleaning, feature selection, and model training in one line. 🚀
 
 - **[autofeat](https://github.com/cod3licious/autofeat)** [![Stars](https://img.shields.io/github/stars/cod3licious/autofeat?style=social&color=white)](https://github.com/cod3licious/autofeat/stargazers)  
-  **Linear Prediction Model with Automated Feature Engineering and Selection Capabilities**, MIT licensed. **546+ GitHub stars** — **Non-linear feature engineering** for interpretable linear models using automated non-linear transformations and L1 regularized feature selection. 🔧
+  **Linear Prediction Model with Automated Feature Engineering and Selection Capabilities**, MIT licensed. **546+ GitHub_Stars** — **Non-linear feature engineering** for interpretable linear models using automated non-linear transformations and L1 regularized feature selection. 🔧
 
 - **[archai](https://github.com/microsoft/archai)** [![Stars](https://img.shields.io/github/stars/microsoft/archai?style=social&color=white)](https://github.com/microsoft/archai/stargazers)  
-  **Accelerate Neural Architecture Search (NAS) through fast, reproducible and modular research**, MIT licensed. **487+ GitHub stars** — **Microsoft's modular NAS research framework** for efficient computer vision and transformer architecture generation. 🏗️
+  **Accelerate Neural Architecture Search (NAS) through fast, reproducible and modular research**, MIT licensed. **487+ GitHub_Stars** — **Microsoft's modular NAS research framework** for efficient computer vision and transformer architecture generation. 🏗️
 
 - **[SapientML](https://github.com/sapientml/sapientml)** [![Stars](https://img.shields.io/github/stars/sapientml/sapientml?style=social&color=white)](https://github.com/sapientml/sapientml/stargazers)  
-  **Generative AutoML for Tabular Data**, Apache-2.0 licensed. **447+ GitHub stars** — **Generative AutoML** that synthesizes transparent Python code pipelines directly from dataset characteristics and meta-learning models. 🤖
+  **Generative AutoML for Tabular Data**, Apache-2.0 licensed. **447+ GitHub_Stars** — **Generative AutoML** that synthesizes transparent Python code pipelines directly from dataset characteristics and meta-learning models. 🤖
 
 - **[AutoQuant](https://github.com/AdrianAntico/AutoQuant)** [![Stars](https://img.shields.io/github/stars/AdrianAntico/AutoQuant?style=social&color=white)](https://github.com/AdrianAntico/AutoQuant/stargazers)  
-  **R package for automation of machine learning, forecasting, and interpretation**, open-source. **252+ GitHub stars** — **End-to-end automated machine learning in R** with integrated time series forecasting and SHAP explanations. 📈
+  **R package for automation of machine learning, forecasting, and interpretation**, open-source. **252+ GitHub_Stars** — **End-to-end automated machine learning in R** with integrated time series forecasting and SHAP explanations. 📈
 
 - **[autoalbument](https://github.com/albumentations-team/autoalbument)** [![Stars](https://img.shields.io/github/stars/albumentations-team/autoalbument?style=social&color=white)](https://github.com/albumentations-team/autoalbument/stargazers)  
-  **AutoML for image augmentation**, MIT licensed. **206+ GitHub stars** — **Automated image augmentation policy search** powered by Albumentations and Faster AutoAugment. 🖼️
+  **AutoML for image augmentation**, MIT licensed. **206+ GitHub_Stars** — **Automated image augmentation policy search** powered by Albumentations and Faster AutoAugment. 🖼️
 
 - **[EvolutionaryForest](https://github.com/hengzhe-zhang/EvolutionaryForest)** [![Stars](https://img.shields.io/github/stars/hengzhe-zhang/EvolutionaryForest?style=social&color=white)](https://github.com/hengzhe-zhang/EvolutionaryForest/stargazers)  
-  **Open source python library for automated feature engineering based on Genetic Programming**, open-source. **168+ GitHub stars** — **Genetic programming for automated feature construction** in ensemble tree models. 🌲
+  **Open source python library for automated feature engineering based on Genetic Programming**, open-source. **168+ GitHub_Stars** — **Genetic programming for automated feature construction** in ensemble tree models. 🌲
 
 - **[mindware](https://github.com/thomas-young-2013/mindware)** [![Stars](https://img.shields.io/github/stars/thomas-young-2013/mindware?style=social&color=white)](https://github.com/thomas-young-2013/mindware/stargazers)  
-  **Efficient open-source AutoML system for automating ML lifecycle**, open-source. **61+ GitHub stars** — **Multi-objective automated machine learning pipeline optimizer** covering feature engineering, NAS, and HPO. 🛠️
+  **Efficient open-source AutoML system for automating ML lifecycle**, open-source. **61+ GitHub_Stars** — **Multi-objective automated machine learning pipeline optimizer** covering feature engineering, NAS, and HPO. 🛠️
 
 - **[Trane](https://github.com/trane-dev/Trane)** [![Stars](https://img.shields.io/github/stars/trane-dev/Trane?style=social&color=white)](https://github.com/trane-dev/Trane/stargazers)  
-  **An open source python library for automated prediction engineering**, open-source. **45+ GitHub stars** — **Automates time-dependent prediction problem formulation** and training label generation from relational data. 🎯
+  **An open source python library for automated prediction engineering**, open-source. **45+ GitHub_Stars** — **Automates time-dependent prediction problem formulation** and training label generation from relational data. 🎯
 
 - **[a2ml](https://github.com/augerai/a2ml)** [![Stars](https://img.shields.io/github/stars/augerai/a2ml?style=social&color=white)](https://github.com/augerai/a2ml/stargazers)  
-  **Common API for all second-gen AutoML APIs**, Apache-2.0 licensed. **38+ GitHub stars** — **Unified abstraction CLI & API** for orchestrating Google Cloud AutoML, Azure Automated ML, and local engines. ☁️
+  **Common API for all second-gen AutoML APIs**, Apache-2.0 licensed. **38+ GitHub_Stars** — **Unified abstraction CLI & API** for orchestrating Google Cloud AutoML, Azure Automated ML, and local engines. ☁️
 
 ---
 
@@ -191,3 +191,12 @@ If you find this AutoML repository useful, please consider supporting the projec
   <b>Made with ❤️ for data scientists, ML engineers, and open-source AutoML advocates.</b>
 </p>
 
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Automated-Machine-Learning-Automl&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Automated-Machine-Learning-Automl_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Automated-Machine-Learning-Automl_growth.svg">
+  </picture>
+</a>

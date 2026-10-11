@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#070a13" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="50%" stop-color="#7000FF" />
+      <stop offset="100%" stop-color="#FF007A" />
+    </linearGradient>
+
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7000FF" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <radialGradient id="glowG1" cx="20%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glowG2" cx="80%" cy="75%" r="60%">
+      <stop offset="0%" stop-color="#ff007a" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#ff007a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
+    </pattern>
+
+    <!-- Filter for Glow effects -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+
+      /* Dynamic Animations (Background/Subtle only to ensure foreground text remains 100% visible) */
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes floatNode1 {
+        0%, 100% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(-12px) translateX(6px); }
+      }
+      @keyframes floatNode2 {
+        0%, 100% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(14px) translateX(-8px); }
+      }
+      @keyframes flowData {
+        0% { stroke-dashoffset: 240; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes orbitalSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      .pulse-ambient {
+        animation: pulseGlow 8s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .floating-node-1 {
+        animation: floatNode1 6s ease-in-out infinite;
+      }
+      .floating-node-2 {
+        animation: floatNode2 7s ease-in-out infinite;
+      }
+      .flow-circuit {
+        stroke-dasharray: 12, 12;
+        animation: flowData 15s linear infinite;
+      }
+      .orbit-ring {
+        animation: orbitalSpin 30s linear infinite;
+        transform-origin: 1050px 180px;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" rx="16" />
+  <rect width="1200" height="360" fill="url(#grid)" rx="16" />
+
+  <!-- Ambient Glow Spheres (behind everything) -->
+  <circle cx="240" cy="100" r="260" fill="url(#glowG1)" class="pulse-ambient" />
+  <circle cx="980" cy="240" r="280" fill="url(#glowG2)" class="pulse-ambient" />
+
+  <!-- Dynamic Network / Pipeline Illustration in Background & Right Flank -->
+  <g opacity="0.45" class="floating-node-1">
+    <!-- Connecting neural pipeline curves -->
+    <path class="flow-circuit" d="M 120 40 C 250 80, 200 320, 420 300 S 700 80, 850 160 S 1020 320, 1140 180" fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" />
+    <path class="flow-circuit" d="M 60 280 C 180 200, 320 220, 520 120 S 840 240, 1100 80" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-opacity="0.6" style="animation-direction: reverse;" />
+  </g>
+
+  <!-- Decorative Orbit Nodes on Right Side -->
+  <g class="orbit-ring" opacity="0.3">
+    <circle cx="1050" cy="180" r="100" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="6,8" />
+    <circle cx="1050" cy="80" r="6" fill="#00F0FF" filter="url(#neonGlow)" />
+    <circle cx="1150" cy="180" r="5" fill="#FF007A" filter="url(#neonGlow)" />
+    <circle cx="950" cy="180" r="4" fill="#7000FF" />
+  </g>
+
+  <!-- Dynamic Neural Core graphic -->
+  <g class="floating-node-2" transform="translate(930, 80)">
+    <circle cx="120" cy="100" r="48" fill="#0d1b2a" stroke="url(#primaryGrad)" stroke-width="2" filter="url(#neonGlow)" />
+    <text x="120" y="108" text-anchor="middle" font-size="34">🤖</text>
+  </g>
+
+  <!-- Foreground Content Block (Always clear and legible, never obstructed) -->
+  <g transform="translate(80, 0)">
+    
+    <!-- Top Pill / Badge -->
+    <g transform="translate(0, 56)">
+      <rect x="0" y="0" width="310" height="30" rx="15" fill="#0d1b2a" stroke="url(#primaryGrad)" stroke-width="1.5" />
+      <circle cx="16" cy="15" r="5" fill="#00F0FF">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="32" y="19" fill="#00F0FF" class="badge-text">CURATED REPO • AUTOMATED ML ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="148" fill="#FFFFFF" font-size="46" class="title-text">
+      Awesome AutoML <tspan fill="url(#primaryGrad)">Ecosystem</tspan>
+    </text>
+
+    <!-- Subtitle / Value Prop -->
+    <text x="0" y="192" fill="#E2E8F0" font-size="20" class="subtitle-text">
+      Curated Commercial Platforms &amp; Open-Source ML Automation Frameworks
+    </text>
+
+    <!-- Core Features / Pills -->
+    <g transform="translate(0, 230)">
+      <!-- Pill 1: Feature Engineering -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="170" height="32" rx="8" fill="#141e33" stroke="#253554" stroke-width="1" />
+        <text x="14" y="20" fill="#94A3B8" class="badge-text">⚡ FEATURE ENGIN.</text>
+      </g>
+      <!-- Pill 2: HPO -->
+      <g transform="translate(182, 0)">
+        <rect x="0" y="0" width="150" height="32" rx="8" fill="#141e33" stroke="#253554" stroke-width="1" />
+        <text x="14" y="20" fill="#94A3B8" class="badge-text">⚙️ HYPERPARAM OPT</text>
+      </g>
+      <!-- Pill 3: Model Selection -->
+      <g transform="translate(344, 0)">
+        <rect x="0" y="0" width="165" height="32" rx="8" fill="#141e33" stroke="#253554" stroke-width="1" />
+        <text x="14" y="20" fill="#94A3B8" class="badge-text">🧠 MODEL SELECTION</text>
+      </g>
+      <!-- Pill 4: NAS -->
+      <g transform="translate(521, 0)">
+        <rect x="0" y="0" width="140" height="32" rx="8" fill="#141e33" stroke="#253554" stroke-width="1" />
+        <text x="14" y="20" fill="#94A3B8" class="badge-text">🏗️ ARCH SEARCH</text>
+      </g>
+      <!-- Pill 5: MLOps -->
+      <g transform="translate(673, 0)">
+        <rect x="0" y="0" width="125" height="32" rx="8" fill="#141e33" stroke="#253554" stroke-width="1" />
+        <text x="14" y="20" fill="#94A3B8" class="badge-text">📊 AUTO MLOPS</text>
+      </g>
+    </g>
+
+    <!-- Meta Highlights -->
+    <g transform="translate(0, 296)">
+      <text x="0" y="0" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">
+        🌟 25+ Open-Source Frameworks &nbsp;•&nbsp; 🏢 10 Enterprise SaaS Solutions &nbsp;•&nbsp; 🚀 100% Production Ready &nbsp;•&nbsp; 📅 Updated October 2026
+      </text>
+    </g>
+
+  </g>
+
+  <!-- Modern bottom accent border line -->
+  <rect x="0" y="356" width="1200" height="4" fill="url(#primaryGrad)" />
+</svg>
